@@ -70,7 +70,25 @@ export default function App() {
           </div>
           <div className="glass-stage intro-animate">
             <div className="stage-glow"/>
-            <GlassSlabLogo logo="/logo.svg" slabs={17} renderMode={"detailed"} thickness={0.026} depth={1.25} elevation={38} ior={1.34} density={0.25} colors={["#f97316","#171717","#171717","#171717","#171717"]} reflectivity={1.55} logoScale={0.76} backgroundImage={"/background.svg"} backgroundX={0} backgroundY={0} backgroundScale={1} backgroundTint={"#000000"} backgroundTintOpacity={0} colorOpacity={0.47} style={{ height: 520 }} />
+            <div style={{
+  width: 230,
+  height: 230,
+  margin: '35px auto',
+  display: 'grid',
+  placeItems: 'center',
+  borderRadius: 30,
+  background: 'rgba(255,255,255,0.24)',
+  backdropFilter: 'blur(18px)',
+  WebkitBackdropFilter: 'blur(18px)',
+  border: '1px solid rgba(255,255,255,0.65)',
+  boxShadow: '0 20px 50px rgba(40,40,40,0.18), inset 0 1px 2px white'
+}}>
+  <img
+    src="/logo.svg"
+    alt="Ritual logo"
+    style={{ width: 145, height: 145, borderRadius: 20 }}
+  />
+</div>
             <div className="stage-caption"><span>01 / THE PRACTICE</span><span>SHOW UP, EVERY DAY.</span></div>
           </div>
         </section>
