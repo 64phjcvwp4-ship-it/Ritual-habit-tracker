@@ -2,7 +2,6 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import Lenis from 'lenis'
 import { ArrowUpRight, Check, ChevronDown, CirclePlus, Flame, LayoutGrid, MoreHorizontal, Plus, Settings2, Sparkles, Target, TrendingUp, X } from 'lucide-react'
-import { GlassSlabLogo } from './components/glass-slab-logo'
 
 type Habit = { id: number; name: string; category: string; time: string; done: boolean; streak: number; tint: string }
 const starter: Habit[] = [
